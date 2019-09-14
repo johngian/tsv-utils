@@ -1,0 +1,13 @@
+Source: tsv-utils
+Section: Utilities
+Priority: optional
+Maintainer: John Giannelos <johngiannelos@gmail.com>
+Build-Depends: debhelper (>= 10), ldc
+Standards-Version: 4.1.2
+Homepage: https://github.com/eBay/tsv-utils
+
+Package: tsv-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libphobos2-ldc-shared-dev
+Description: Command line tools for large, tabular data files
+ This is a set of command line utilities for manipulating large tabular data files. Files of numeric and text data commonly found in machine learning, data mining, and similar environments. Filtering, sampling, statistics, joins, and more.

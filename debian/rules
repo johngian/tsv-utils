@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE) DCOMPILER=ldc2
+
+override_dh_auto_test:
+	$(MAKE) test DCOMPILER=ldc2
